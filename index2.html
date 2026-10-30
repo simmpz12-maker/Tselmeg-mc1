@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>shoo shideh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шоо шидэх</title>
 </head>
 <body>
+    <h1>Шоо шидэх</h1>
 
-  <img class="c:\Users\MU303-03\Downloads\dice-images-free-4.jpg" alt="dice">
-  <button onclick="darah()">shoo shideh</button>
+    <img class="dice" alt="шоо" width="150">
+    <br>
+    <button onclick="darah()">Шоо шидэх</button>
 
-  <script>
-    var diceDom = document.querySelector(".dice");
-    diceDom.style.display = "none";
+    <script>
+        var diceDom = document.querySelector(".dice");
+        diceDom.style.display = "none";
 
-    function darah() {
-      var diceNumber = Math.floor(Math.random() * 6) + 1;
-      diceDom.style.display = "block";
-      diceDom.src = "dice-" + diceNumber + ".png";
-    }
-  </script>
-
+        function darah() {
+            var diceNumber = Math.floor(Math.random() * 6) + 1;
+            diceDom.style.display = "block";
+            diceDom.src = "dice-" + diceNumber + ".png";
+        }
+    </script>
 </body>
 </html>
