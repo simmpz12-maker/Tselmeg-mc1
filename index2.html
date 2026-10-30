@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Шоо шидэх</title>
+</head>
+<body>
+
+  <img class="dice" alt="dice">
+  <button onclick="darah()">Шоо шидэх</button>
+
+  <script>
+    var diceDom = document.querySelector(".dice");
+    diceDom.style.display = "none";
+
+    function darah() {
+      var diceNumber = Math.floor(Math.random() * 6) + 1;
+      diceDom.style.display = "block";
+      diceDom.src = "dice-" + diceNumber + ".png";
+    }
+  </script>
+
+</body>
+</html>
